@@ -37,22 +37,4 @@ for _ in range(steps2):
     y2 += (1/6) * (k1 + 2*k2 + 2*k3 + k4)  
     t2 += h2  
 
-print(y2)t - y**2  
-
-# Initial conditions for Runge-Kutta
-t2, y2 = 0, 1  
-end_t2 = 2  
-steps2 = 10  
-h2 = (end_t2 - t2) / steps2  
-
-# Apply Runge-Kutta 4th Order Method
-for _ in range(steps2):
-    k1 = h2 * func2(t2, y2)
-    k2 = h2 * func2(t2 + h2 / 2, y2 + k1 / 2)
-    k3 = h2 * func2(t2 + h2 / 2, y2 + k2 / 2)
-    k4 = h2 * func2(t2 + h2, y2 + k3)
-
-    y2 += (1/6) * (k1 + 2*k2 + 2*k3 + k4)  
-    t2 += h2  
-
 print(y2)
