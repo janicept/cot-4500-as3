@@ -3,6 +3,7 @@ def func1(t, y):
     return t - y**2  
 
 # Initial conditions for Euler Method
+#example (range: 0 < t < 2, y(0) or f(0) = 1, iterations = 10 
 t1, y1 = 0, 1  
 end_t1 = 2  
 steps1 = 10  
